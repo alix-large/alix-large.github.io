@@ -21,6 +21,7 @@
 
     @include mixin.big {
         display: block;
+        height: 18vh;
         margin :auto;
         max-width: 63rem;
         top:0;
