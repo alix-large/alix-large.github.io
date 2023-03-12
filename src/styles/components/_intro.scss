@@ -1,0 +1,200 @@
+@use '../var';
+@use '../mixin';
+
+.intro {
+    padding: 1rem 0.8rem;
+    text-align: center;
+
+    @include mixin.big {
+        width : 40%;
+    }
+
+    @include mixin.printA4 {
+        width : 40%;
+        padding: 0.1rem;
+    }
+    
+    &__img {
+        border: 1px solid var.$background-color-dark;
+        border-radius: 50%;
+    }
+
+    &__principalTitle {
+            font-size: 2.9em;
+            font-weight: lighter;
+            line-height:1.1;
+            text-align: center;
+            margin : 1rem 0;
+            color: var.$text-color-variation;
+            text-shadow :1px 2px var.$background-color-dark;
+
+            @include mixin.printA4 {
+                font-size: 2em;
+            }
+    }
+
+
+    
+    &__title {
+        color: #182037;
+        margin: 1.5rem 0;
+        font-size: 2em;
+        font-weight: lighter;
+
+        @include mixin.printA4 {
+            font-size: 17pt;
+            margin : 10pt 0;
+        }
+    }
+
+    //positionnement du border derriere le titre
+    &__title--background {
+        position: relative;
+        z-index: 1;
+
+        &:before {
+            border-top: 1px solid var.$background-color-dark;
+            content:"";
+            margin: 0 auto; /* cela centre la ligne */
+            position: absolute; /* position absolut doit être appliquée ici, et une position relative sur le parent */
+            top: 50%; left: 0; right: 0; bottom: 0;
+            width: 95%;
+            z-index: -1;
+        }
+    }
+    //Pour masquer la ligne au niveau du titre,on met un background de la même couleur que le container 
+    &__line {
+        background-color: var.$background-color; 
+        padding: 0 3px; 
+    }
+    &__ico {
+        width: 40px;
+        height : 40px;
+        margin: 0;
+        background-color:var.$background-color-dark;
+        border : 1px solid var.$background-color-dark;
+        border-radius: 25px;
+        color: white;
+        text-align: center;
+        margin: 0.5rem 0 0 0;
+        display: inline-block;
+        padding: 0.5rem 0.5rem;
+
+        @include mixin.printA4 {
+           display: none;
+        }
+    }
+    &__text {
+        display: block;
+
+        @include mixin.printA4 {
+            padding: 0;
+            font-size: 15pt;
+        }
+    }
+
+    &__desc {
+        text-align: left;
+        line-height: 1.1;
+
+        &--parcours {
+            padding: 0.2rem 1rem;
+
+            @include mixin.printA4 {
+                padding: 5pt 0;
+            }
+        }
+
+        &--center {
+            text-align: center;
+        }
+        &--italic {
+            font-style: italic;
+            color: rgb(116, 113, 113);
+        }
+    }
+
+    &__link {
+        padding: 0.5rem 0.7rem;
+        color : var.$text-color-variation;
+
+
+        &:hover {
+            color : var.$background-color-dark;
+        }
+    }
+
+    &__item {
+        text-align: left;
+        margin: 0 1rem;
+    }
+
+    &__item--center {
+        text-align: center;
+
+    }
+
+    &__container {
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__element{
+        width: 49%;
+        background-color: var.$background-color-orange-transp;
+        padding: 0.1rem;
+        border-radius : 5px;
+        padding: 0.2rem;
+        text-align: center;
+        margin: 0.2rem 0.1rem 0.2rem 0;
+        color : gray;
+
+        @include mixin.printA4 {
+            line-height: 15pt;
+        }
+     }
+}
+
+.skills{
+ display: flex;
+ flex-wrap: wrap;
+ justify-content:space-between;
+
+    &__item {
+    border: 2px solid var.$background-color-orange-transp;
+    border-radius: 5px;
+    width:45%;
+    margin :0.2rem;
+    }
+    
+    @include mixin.printA4 {
+        font-size: 0.7rem;
+        line-height: 0.7;
+        border: 1px solid white;
+    }
+}
+
+.list__box {
+    background-color: var.$background-color-orange-transp;
+    border: 1px solid var.$background-color-orange-transp;
+    border-radius: 5px;
+    min-width: 8rem;
+
+    @include mixin.printA4 {
+        font-size: 0.6rem;
+        margin: 1rem 0;
+    }
+
+}
+
+.zoom {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.zoom :hover {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}

@@ -1,0 +1,24 @@
+@mixin printA4 {
+    @media print {
+        @content;
+    }
+}
+//ca cible les ecrans en dessous de 50rem (800)
+@mixin small {
+    @media screen and (min-width: 50rem) {
+        @content;
+    }
+}
+
+// @mixin medium {
+//     @media screen and (max-width: 60rem) {
+//       @content;
+//     }
+//   }
+
+//on cible les grands ecrans au dessus de 1440px
+  @mixin big {
+    @media screen and (min-width: 60rem) {
+      @content;
+    }
+  }

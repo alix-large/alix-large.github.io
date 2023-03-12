@@ -1,0 +1,30 @@
+{
+  "name": "cv-alix-large",
+  "version": "1.0.0",
+  "description": "Création d 'un cv",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/O-clock-DWA-Session1/cv-alix-large.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/O-clock-DWA-Session1/cv-alix-large.git/issues"
+  },
+  "homepage": "https://github.com/O-clock-DWA-Session1/cv-alix-large.git#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.2",
+    "parcel": "^2.8.2",
+    "sharp": "^0.31.3"
+  },
+  "dependencies": {
+    "feather-icons": "^4.29.0",
+    "reset-css": "^5.0.1"
+  }
+}

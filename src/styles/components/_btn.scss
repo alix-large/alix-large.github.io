@@ -1,0 +1,38 @@
+@use '../var';
+@use '../mixin';
+
+.btn {
+    display: none;
+    
+    @include mixin.printA4 {
+        display: none;
+
+    }
+
+    @include mixin.big {
+        background-color:var.$background-color-dark;
+        border : 1px solid var.$background-color-dark;
+        border-radius: 25px;
+        color: white;
+        text-align: center;
+        margin: 2rem 0 0 0;
+        display: inline-block;
+        padding: 0.5rem 0.5rem;
+        width : 50px;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+        cursor: pointer;
+        display: inline;
+
+        &:hover {
+            background-color: bisque;
+            border : 1px solid var.$background-color-orange-transp;
+            color: gray;
+        } 
+    }
+
+}
+
+
