@@ -5,8 +5,10 @@
     padding: 1rem 0.8rem;
     text-align: center;
 
+
     @include mixin.big {
         width : 40%;
+        margin-top: 6rem;
     }
 
     @include mixin.printA4 {
@@ -54,8 +56,6 @@
             }
     }
 
-
-    
     &__title {
         color: #182037;
         margin: 1.5rem 0;
@@ -159,12 +159,12 @@
         display:flex;
         flex-wrap: wrap;
         justify-content: space-between;
-    }
+
+   }
 
     &__element{
         width: 49%;
         background-color: var.$background-color-orange-transp;
-        padding: 0.1rem;
         border-radius : 5px;
         padding: 0.2rem;
         text-align: center;
@@ -172,7 +172,9 @@
         color : gray;
 
         @include mixin.printA4 {
-            line-height: 15pt;
+            line-height: 10pt;
+            width : 15%;
+            margin: 0;
         }
      }
 }

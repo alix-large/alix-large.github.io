@@ -100,17 +100,94 @@ a:hover {
   color: #bb7021;
 }
 
+.header {
+  width: 100%;
+  z-index: 10;
+  height: 22vh;
+  background-color: #bb7021;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@media print {
+  .header {
+    height: 10pt;
+    position: static;
+  }
+}
+
+@media screen and (min-width: 60rem) {
+  .header {
+    max-width: 63rem;
+    margin: auto;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+.header__principalTitle {
+  text-align: center;
+  color: #182037;
+  flex-direction: column;
+  align-items: center;
+  margin: .1rem 0;
+  padding-top: 1rem;
+  font-size: 2.8rem;
+  line-height: 1;
+  display: flex;
+}
+
+@media print {
+  .header__principalTitle {
+    font-size: 1.8rem;
+  }
+}
+
+.header__subtitle {
+  color: #fbfcfb;
+  background-color: #182037;
+  border-radius: 15px;
+  margin-bottom: 3rem;
+  padding: .5rem;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  display: block;
+}
+
+@media print {
+  .header__subtitle {
+    color: #182037;
+    margin-bottom: 10pt;
+    font-size: 12pt;
+  }
+}
+
+@media screen and (min-width: 60rem) {
+  .header__subtitle {
+    width: 25%;
+    font-size: 1.1rem;
+  }
+}
+
 .page {
   max-width: 63rem;
   background-color: #fbfcfb;
-  margin: auto;
+  margin: 22vh auto auto;
+  padding-top: 1rem;
   display: block;
 }
 
 @media print {
   .page {
     background-color: #fff;
-    margin: auto;
+    margin: 3rem auto auto;
     display: flex;
   }
 }
@@ -118,7 +195,7 @@ a:hover {
 @media screen and (min-width: 60rem) {
   .page {
     background-color: #fff;
-    margin: 1rem auto;
+    margin: 8vh auto auto;
     display: flex;
   }
 }
@@ -137,6 +214,7 @@ a:hover {
 @media screen and (min-width: 60rem) {
   .intro {
     width: 40%;
+    margin-top: 6rem;
   }
 }
 
@@ -312,7 +390,9 @@ a:hover {
 
 @media print {
   .intro__element {
-    line-height: 15pt;
+    width: 15%;
+    margin: 0;
+    line-height: 10pt;
   }
 }
 
@@ -367,7 +447,7 @@ a:hover {
 @media screen and (min-width: 60rem) {
   .bloc {
     width: 60%;
-    margin: 5rem 1.6rem 1rem 1.2rem;
+    margin: 6rem 1.6rem 1rem 1.2rem;
   }
 }
 
@@ -390,7 +470,7 @@ a:hover {
 
 @media print {
   .bloc__title {
-    margin: 10pt 0;
+    margin: 6pt 0;
     font-size: 14pt;
   }
 }
