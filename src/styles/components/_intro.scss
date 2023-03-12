@@ -5,21 +5,44 @@
     padding: 1rem 0.8rem;
     text-align: center;
 
+
     @include mixin.big {
         width : 40%;
+        margin-top: 6rem;
     }
 
     @include mixin.printA4 {
         width : 40%;
         padding: 0.1rem;
     }
-    
+
+    //positionnement du border derriere le titre
+    &__title--background {
+        position: relative;
+        z-index: 1;
+
+        &:before {
+            border-top: 1px solid var.$background-color-dark;
+            content:"";
+            margin: 0 auto; /* cela centre la ligne */
+            position: absolute; /* position absolut doit être appliquée ici, et une position relative sur le parent */
+            top: 30%; left: 0; right: 0; bottom: 0;
+            width: 95%;
+            z-index: -1;
+        }
+    }
+    //Pour masquer la ligne au niveau du titre,on met un background de la même couleur que le container 
+    &__line {
+        background-color: var.$background-color-variation; 
+        padding: 0 3px; 
+    }
+
     &__img {
         border: 1px solid var.$background-color-dark;
         border-radius: 50%;
     }
 
-    &__principalTitle {
+    &__secondaryTitle {
             font-size: 2.9em;
             font-weight: lighter;
             line-height:1.1;
@@ -33,8 +56,6 @@
             }
     }
 
-
-    
     &__title {
         color: #182037;
         margin: 1.5rem 0;
@@ -138,12 +159,12 @@
         display:flex;
         flex-wrap: wrap;
         justify-content: space-between;
-    }
+
+   }
 
     &__element{
         width: 49%;
         background-color: var.$background-color-orange-transp;
-        padding: 0.1rem;
         border-radius : 5px;
         padding: 0.2rem;
         text-align: center;
@@ -151,7 +172,9 @@
         color : gray;
 
         @include mixin.printA4 {
-            line-height: 15pt;
+            line-height: 10pt;
+            width : 15%;
+            margin: 0;
         }
      }
 }

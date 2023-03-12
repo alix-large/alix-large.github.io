@@ -5,7 +5,9 @@
   "source": "src/index.html",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build"
+    "clear": "rm -rf .parcel-cache dist",
+    "build": "parcel build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -25,6 +27,8 @@
   },
   "dependencies": {
     "feather-icons": "^4.29.0",
-    "reset-css": "^5.0.1"
+    "gh-pages": "^5.0.0",
+    "reset-css": "^5.0.1",
+    "sass": "^1.57.1"
   }
 }

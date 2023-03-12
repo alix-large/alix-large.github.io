@@ -6,71 +6,10 @@
 
     @include mixin.big {
         width: 60%;
-        margin :5rem 1.6rem 1rem 1.2rem;
+        margin :6rem 1.6rem 1rem 1.2rem;
     }
     @include mixin.printA4 {
         width : 60%;
-    }
-
-    &__principalTitle {
-        font-size: 2.8rem;
-        line-height: 1;
-        text-align: center;
-        margin : 0.1rem 0;
-        color: var.$background-color-dark;
-        padding-top: 1rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        @include mixin.printA4 {
-            font-size: 20pt;
-        }
-
-    }
-    //positionnement du border derriere le titre
-    &__title--background {
-        position: relative;
-        z-index: 1;
-
-        &:before {
-            border-top: 1px solid var.$background-color-dark;
-            content:"";
-            margin: 0 auto; /* cela centre la ligne */
-            position: absolute; /* position absolut doit être appliquée ici, et une position relative sur le parent */
-            top: 30%; left: 0; right: 0; bottom: 0;
-            width: 95%;
-            z-index: -1;
-        }
-    }
-    //Pour masquer la ligne au niveau du titre,on met un background de la même couleur que le container 
-    &__line {
-        background-color: var.$background-color-variation; 
-        padding: 0 3px; 
-    }
-
-    &__subtitle {
-            font-size: 1.2rem;
-            font-weight: lighter;
-            width:53%;
-            display: block;
-            background-color: var.$background-color-dark;
-            border-radius: 15px;
-            color: var.$background-color;
-            padding: .5rem 0 .5rem 0;
-            margin-bottom: 3rem;
-
-            @include mixin.printA4 {
-                font-size: 12pt;
-                color: var.$background-color-dark;
-                margin-bottom: 10pt;
-            }
-
-            @include mixin.big {
-                font-size: 1.1rem;
-                width : 60%;
-            }
-
     }
 
     &__title {
@@ -85,7 +24,7 @@
 
         @include mixin.printA4 {
             font-size: 14pt;
-            margin: 10pt 0;
+            margin: 6pt 0;
         }
 
     }

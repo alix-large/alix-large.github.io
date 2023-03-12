@@ -2,18 +2,19 @@
 @use '../mixin';
 
 .page {
-        // background-color: aqua;
         background-color: var.$background-color;
-        // width: 90%;
         max-width : 63rem;
         display: block;
         margin: auto;
+        margin: 22vh auto auto;
+        padding-top: 1rem;
         
 
         @include mixin.printA4 {
             background-color: rgb(255, 255, 255);
             display: flex;
             margin : auto;
+            margin-top: 3rem;
           }
 
         //en dessous de 50rem, les reglges ci dessous ne s'applique pas
@@ -21,6 +22,7 @@
                 background-color: rgb(255, 255, 255);
                 display: flex;
                 margin : 1rem auto;
+                margin : 8vh auto auto;
             }
 
 }

@@ -1,0 +1,72 @@
+@use '../var';
+@use '../mixin';
+
+.header {
+    width: 100%;
+    z-index: 10;
+    height: 22vh;
+    background-color:var.$text-color-variation;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    @include mixin.printA4{
+        position: static;
+        height : 10pt;
+    }
+
+    @include mixin.big {
+        display: block;
+        margin :auto;
+        max-width: 63rem;
+        top:0;
+        left :0;
+        right: 0;
+    }
+
+    &__principalTitle {
+        font-size: 2.8rem;
+        line-height: 1;
+        text-align: center;
+        margin : 0.1rem 0;
+        color: var.$background-color-dark;
+        padding-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        
+        @include mixin.printA4{
+            font-size:1.8rem;
+        }
+}
+
+&__subtitle {
+        font-size: 1.2rem;
+        font-weight: lighter;
+        display: block;
+        background-color: var.$background-color-dark;
+        border-radius: 15px;
+        color: var.$background-color;
+        padding: .5rem;
+        margin-bottom: 3rem;
+
+        @include mixin.printA4 {
+            font-size: 12pt;
+            color: var.$background-color-dark;
+            margin-bottom: 10pt;
+        }
+
+        @include mixin.big {
+            font-size: 1.1rem;
+            width : 25%;
+        }
+    }
+}
+
+
+
