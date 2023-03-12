@@ -123,6 +123,7 @@ a:hover {
 
 @media screen and (min-width: 60rem) {
   .header {
+    height: 18vh;
     max-width: 63rem;
     margin: auto;
     display: block;
