@@ -109,7 +109,7 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   display: flex;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
 }
@@ -180,7 +180,7 @@ a:hover {
 .page {
   max-width: 63rem;
   background-color: #fbfcfb;
-  margin: 22vh auto auto;
+  margin: auto;
   padding-top: 1rem;
   display: block;
 }
@@ -196,7 +196,6 @@ a:hover {
 @media screen and (min-width: 60rem) {
   .page {
     background-color: #fff;
-    margin: 8vh auto auto;
     display: flex;
   }
 }
@@ -215,7 +214,6 @@ a:hover {
 @media screen and (min-width: 60rem) {
   .intro {
     width: 40%;
-    margin-top: 6rem;
   }
 }
 
@@ -448,7 +446,6 @@ a:hover {
 @media screen and (min-width: 60rem) {
   .bloc {
     width: 60%;
-    margin: 6rem 1.6rem 1rem 1.2rem;
   }
 }
 
