@@ -6,8 +6,8 @@
 
     @include mixin.big {
         width: 60%;
-        margin :6rem 1.6rem 1rem 1.2rem;
     }
+    
     @include mixin.printA4 {
         width : 60%;
     }

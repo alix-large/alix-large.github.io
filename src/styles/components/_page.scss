@@ -6,7 +6,6 @@
         max-width : 63rem;
         display: block;
         margin: auto;
-        margin: 22vh auto auto;
         padding-top: 1rem;
         
 
@@ -21,8 +20,6 @@
          @include mixin.big {
                 background-color: rgb(255, 255, 255);
                 display: flex;
-                margin : 1rem auto;
-                margin : 8vh auto auto;
             }
 
 }
