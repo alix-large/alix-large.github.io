@@ -92,19 +92,19 @@ img {
 }
 
 a {
-  color: #668a9b;
+  color: #747171;
   text-decoration: none;
 }
 
 a:hover {
-  color: #bb7021;
+  color: #af6420;
 }
 
 .header {
   width: 100%;
   z-index: 10;
   height: 22vh;
-  background-color: #bb7021;
+  background-color: #af6420;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -135,7 +135,7 @@ a:hover {
 
 .header__principalTitle {
   text-align: center;
-  color: #182037;
+  color: #fff;
   flex-direction: column;
   align-items: center;
   margin: .1rem 0;
@@ -152,7 +152,7 @@ a:hover {
 }
 
 .header__subtitle {
-  color: #fbfcfb;
+  color: #fff;
   background-color: #182037;
   border-radius: 15px;
   margin-bottom: 3rem;
@@ -179,7 +179,7 @@ a:hover {
 
 .page {
   max-width: 63rem;
-  background-color: #fbfcfb;
+  background-color: #fff;
   margin: auto;
   padding-top: 1rem;
   display: block;
@@ -240,7 +240,7 @@ a:hover {
 }
 
 .intro__line {
-  background-color: #fbfcfb;
+  background-color: #fff;
   padding: 0 3px;
 }
 
@@ -251,7 +251,7 @@ a:hover {
 
 .intro__secondaryTitle {
   text-align: center;
-  color: #bb7021;
+  color: #af6420;
   text-shadow: 1px 2px #182037;
   margin: 1rem 0;
   font-size: 2.9em;
@@ -295,7 +295,7 @@ a:hover {
 }
 
 .intro__line {
-  background-color: #fbfcfb;
+  background-color: #fff;
   padding: 0 3px;
 }
 
@@ -354,7 +354,7 @@ a:hover {
 }
 
 .intro__link {
-  color: #bb7021;
+  color: #af6420;
   padding: .5rem .7rem;
 }
 
@@ -380,7 +380,7 @@ a:hover {
 .intro__element {
   width: 49%;
   text-align: center;
-  color: gray;
+  color: #5f5d5d;
   background-color: #bb70211d;
   border-radius: 5px;
   margin: .2rem .1rem .2rem 0;
@@ -474,7 +474,7 @@ a:hover {
 }
 
 .bloc__intitul {
-  color: #bb7021;
+  color: #af6420;
   font-size: 1.2em;
 }
 
@@ -486,7 +486,7 @@ a:hover {
 
 .bloc__date {
   text-align: center;
-  color: #fbfcfb;
+  color: #fff;
   background-color: #182037;
   border-radius: 11px;
   margin: .4rem 0 .2rem;
