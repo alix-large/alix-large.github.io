@@ -32,7 +32,7 @@
     }
     //Pour masquer la ligne au niveau du titre,on met un background de la même couleur que le container 
     &__line {
-        background-color: var.$background-color-variation; 
+        background-color: var.$background-color; 
         padding: 0 3px; 
     }
 
@@ -168,7 +168,7 @@
         padding: 0.2rem;
         text-align: center;
         margin: 0.2rem 0.1rem 0.2rem 0;
-        color : gray;
+        color : #5f5d5d;
 
         @include mixin.printA4 {
             line-height: 10pt;
