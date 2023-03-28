@@ -28,6 +28,16 @@
         left :0;
         right: 0;
     }
+    &__title {
+        font-weight: bold;
+        color: var.$text-color;
+        text-transform: uppercase;
+    }
+
+    &__title--middle {
+        color :var.$background-color;
+        line-height: 0.8;
+    }
 
     &__principalTitle {
         font-size: 2.8rem;
@@ -48,7 +58,7 @@
 
 &__subtitle {
         font-size: 1.2rem;
-        font-weight: lighter;
+        font-weight: bold;
         display: block;
         background-color: var.$background-color-dark;
         border-radius: 15px;
@@ -68,6 +78,38 @@
         }
     }
 }
+
+.animation {
+        -webkit-animation-name: animation;
+        animation-name: animation;
+        -webkit-animation-duration: 2s;
+        animation-duration: 2s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        }
+        @-webkit-keyframes animation {
+        0% {
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+        visibility: visible;
+        }
+        100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        }
+        }
+        @keyframes animation {
+        0% {
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+        visibility: visible;
+        }
+        100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        }
+} 
+
 
 
 
