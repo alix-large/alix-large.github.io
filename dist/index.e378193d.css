@@ -108,6 +108,8 @@ a:hover {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  padding-top: .5rem;
+  line-height: .8;
   display: flex;
   position: sticky;
   top: 0;
@@ -126,6 +128,7 @@ a:hover {
     height: 18vh;
     max-width: 63rem;
     margin: auto;
+    padding-top: 1.2rem;
     display: block;
     top: 0;
     left: 0;
@@ -135,13 +138,14 @@ a:hover {
 
 .header__title {
   color: #183650;
-  text-transform: uppercase;
   font-weight: bold;
 }
 
-.header__title--middle {
-  color: #fff;
-  line-height: .8;
+.header__secondTitle {
+  color: #183650;
+  text-shadow: 1px 2px #fff;
+  font-size: 2.3rem;
+  font-weight: lighter;
 }
 
 .header__principalTitle {
@@ -149,8 +153,6 @@ a:hover {
   color: #fff;
   flex-direction: column;
   align-items: center;
-  margin: .1rem 0;
-  padding-top: 1rem;
   font-size: 2.8rem;
   line-height: 1;
   display: flex;
@@ -185,23 +187,6 @@ a:hover {
   .header__subtitle {
     width: 25%;
     font-size: 1.1rem;
-  }
-}
-
-.animation {
-  animation-name: animation;
-  animation-duration: 2s;
-  animation-fill-mode: both;
-}
-
-@keyframes animation {
-  0% {
-    visibility: visible;
-    transform: translateY(-100%);
-  }
-
-  100% {
-    transform: translateY(0);
   }
 }
 

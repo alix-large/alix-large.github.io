@@ -9,6 +9,8 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    padding-top : 0.5rem;
+    line-height: 0.8;
     display: flex;
     position: sticky;
     top: 0;
@@ -21,6 +23,7 @@
 
     @include mixin.big {
         display: block;
+        padding-top : 1.2rem;
         height: 18vh;
         margin :auto;
         max-width: 63rem;
@@ -31,21 +34,21 @@
     &__title {
         font-weight: bold;
         color: var.$text-color;
-        text-transform: uppercase;
     }
 
-    &__title--middle {
-        color :var.$background-color;
-        line-height: 0.8;
+    &__secondTitle {
+        font-size: 2.3rem;
+        font-weight: lighter;
+        color: var.$text-color;
+        text-shadow: 1px 2px var.$background-color;
+
     }
 
     &__principalTitle {
         font-size: 2.8rem;
         line-height: 1;
         text-align: center;
-        margin : 0.1rem 0;
         color: var.$background-color;
-        padding-top: 1rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -78,37 +81,7 @@
         }
     }
 }
-
-.animation {
-        -webkit-animation-name: animation;
-        animation-name: animation;
-        -webkit-animation-duration: 2s;
-        animation-duration: 2s;
-        -webkit-animation-fill-mode: both;
-        animation-fill-mode: both;
-        }
-        @-webkit-keyframes animation {
-        0% {
-        -webkit-transform: translateY(-100%);
-        transform: translateY(-100%);
-        visibility: visible;
-        }
-        100% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-        }
-        }
-        @keyframes animation {
-        0% {
-        -webkit-transform: translateY(-100%);
-        transform: translateY(-100%);
-        visibility: visible;
-        }
-        100% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-        }
-} 
+ 
 
 
 
