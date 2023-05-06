@@ -57,7 +57,7 @@ table {
 }
 
 body {
-  color: #000;
+  color: #0e1c29;
   height: 100vh;
   background-color: #0e1c29;
   font-family: calibri, sans-serif;
@@ -97,7 +97,7 @@ ul, li, a.intro_link {
 }
 
 a {
-  color: #af6420;
+  color: #006280;
   text-decoration: none;
 }
 
@@ -106,8 +106,7 @@ a:visited {
 }
 
 a:hover, a:focus, a:active {
-  color: #af6420;
-  outline: 2px solid #0e1c29;
+  border: 1px dotted #0e1c29;
 }
 
 .header {
@@ -268,14 +267,21 @@ a:hover, a:focus, a:active {
 }
 
 .intro__img {
+  width: 50%;
+  -o-transition: all 2s ease;
   border: 1px solid #0e1c29;
   border-radius: 50%;
+  transition: all 2s;
+}
+
+.intro__img:hover {
+  transform: scale(1.3);
 }
 
 .intro__secondaryTitle {
   text-align: center;
-  color: #af6420;
-  text-shadow: 1px 2px #0e1c29;
+  color: #0e1c29;
+  text-shadow: 1px 2px #fff;
   margin: 1rem 0;
   font-size: 2.9em;
   font-weight: lighter;
@@ -289,7 +295,7 @@ a:hover, a:focus, a:active {
 }
 
 .intro__title {
-  color: #182037;
+  color: #0e1c29;
   margin: 1.5rem 0;
   font-size: 2em;
   font-weight: lighter;
@@ -394,8 +400,8 @@ a:hover, a:focus, a:active {
 .intro__element {
   width: 49%;
   text-align: center;
-  color: #5f5d5d;
-  background-color: #bb70211d;
+  color: #fff;
+  background-color: #af6420;
   border-radius: 5px;
   margin: .2rem .1rem .2rem 0;
   padding: .2rem;
@@ -409,31 +415,11 @@ a:hover, a:focus, a:active {
   }
 }
 
-.skills {
-  flex-wrap: wrap;
-  justify-content: space-between;
-  display: flex;
-}
-
-.skills__item {
-  width: 45%;
-  border: 2px solid #bb70211d;
-  border-radius: 5px;
-  margin: .2rem;
-}
-
-@media print {
-  .skills {
-    border: 1px solid #fff;
-    font-size: .7rem;
-    line-height: .7;
-  }
-}
-
 .list__box {
+  color: #fff;
   min-width: 8rem;
-  background-color: #bb70211d;
-  border: 1px solid #bb70211d;
+  background-color: #747171;
+  border: 1px solid #747171;
   border-radius: 5px;
 }
 
@@ -442,15 +428,6 @@ a:hover, a:focus, a:active {
     margin: 1rem 0;
     font-size: .6rem;
   }
-}
-
-.zoom {
-  transition: all .3s ease-in-out;
-  transform: scale(1);
-}
-
-.zoom :hover {
-  transform: scale(1.3);
 }
 
 .bloc {
@@ -470,7 +447,7 @@ a:hover, a:focus, a:active {
 }
 
 .bloc__title {
-  color: #bb7021;
+  color: #0e1c29;
   text-align: left;
   text-shadow: 1px 1px #182037;
   border-bottom: 1px solid #0e1c29;
@@ -550,9 +527,9 @@ a:hover, a:focus, a:active {
   }
 
   .btn:hover {
+    text-color-light: bisque;
     color: gray;
-    background-color: bisque;
-    border: 1px solid #bb70211d;
+    border: 1px solid #0e1c29;
   }
 }
 
