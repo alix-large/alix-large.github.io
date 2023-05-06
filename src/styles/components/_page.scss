@@ -8,7 +8,6 @@
         margin: auto;
         padding-top: 1rem;
         
-
         @include mixin.printA4 {
             background-color: rgb(255, 255, 255);
             display: flex;
@@ -17,11 +16,10 @@
           }
 
         //en dessous de 50rem, les reglges ci dessous ne s'applique pas
-         @include mixin.big {
+        @include mixin.big {
                 background-color: rgb(255, 255, 255);
                 display: flex;
             }
-
 }
 
 @include mixin.printA4 {
