@@ -22,18 +22,17 @@
   }
 
 body {
-    background-color: var.$background-color-dark;
+    background-color: var.$color-dark;
     line-height: 1.3;
     font-family: calibri, sans-serif;
     color: black;
     height : 100vh;
-    font-size : 1em;
+    font-size : 1.1em;
 
     @include mixin.printA4 {
       font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-      color: black;
+      color: var.$color-dark;
     }
-
 }
 
 p {
@@ -52,12 +51,23 @@ input, select, button, textarea {
 img {
     max-width: 100%;
 }
+ul, li, a.intro_link {
+  display: flex;
+  flex-direction: column;
+}
 
 a {
     text-decoration: none;
-    color: #747171;
-  
-    &:hover {
-      color: var.$text-color-variation;
+    color: var.$color-dark-variation;
+
+    &:visited {
+      color: var.$link-visited ;
+    }
+ 
+    &:hover,
+    &:focus,
+    &:active {
+      color: var.$color-dark-variation;
+      outline: var.$color-dark solid 2px;
     }
 }

@@ -59,15 +59,15 @@ table {
 body {
   color: #000;
   height: 100vh;
-  background-color: #183650;
+  background-color: #0e1c29;
   font-family: calibri, sans-serif;
-  font-size: 1em;
+  font-size: 1.1em;
   line-height: 1.3;
 }
 
 @media print {
   body {
-    color: #000;
+    color: #0e1c29;
     font-family: Lucida Sans, Lucida Sans Regular, Lucida Grande, Lucida Sans Unicode, Geneva, Verdana, sans-serif;
   }
 }
@@ -91,13 +91,23 @@ img {
   max-width: 100%;
 }
 
+ul, li, a.intro_link {
+  flex-direction: column;
+  display: flex;
+}
+
 a {
-  color: #747171;
+  color: #af6420;
   text-decoration: none;
 }
 
-a:hover {
+a:visited {
+  color: #4d4d47;
+}
+
+a:hover, a:focus, a:active {
   color: #af6420;
+  outline: 2px solid #0e1c29;
 }
 
 .header {
@@ -137,12 +147,12 @@ a:hover {
 }
 
 .header__title {
-  color: #183650;
+  color: #0e1c29;
   font-weight: bold;
 }
 
 .header__secondTitle {
-  color: #183650;
+  color: #0e1c29;
   text-shadow: 1px 2px #fff;
   font-size: 2.3rem;
   font-weight: lighter;
@@ -166,7 +176,7 @@ a:hover {
 
 .header__subtitle {
   color: #fff;
-  background-color: #183650;
+  background-color: #0e1c29;
   border-radius: 15px;
   margin-bottom: 3rem;
   padding: .5rem;
@@ -177,7 +187,7 @@ a:hover {
 
 @media print {
   .header__subtitle {
-    color: #183650;
+    color: #0e1c29;
     margin-bottom: 10pt;
     font-size: 12pt;
   }
@@ -246,7 +256,7 @@ a:hover {
   content: "";
   width: 95%;
   z-index: -1;
-  border-top: 1px solid #183650;
+  border-top: 1px solid #0e1c29;
   margin: 0 auto;
   position: absolute;
   inset: 30% 0 0;
@@ -258,14 +268,14 @@ a:hover {
 }
 
 .intro__img {
-  border: 1px solid #183650;
+  border: 1px solid #0e1c29;
   border-radius: 50%;
 }
 
 .intro__secondaryTitle {
   text-align: center;
   color: #af6420;
-  text-shadow: 1px 2px #183650;
+  text-shadow: 1px 2px #0e1c29;
   margin: 1rem 0;
   font-size: 2.9em;
   font-weight: lighter;
@@ -301,7 +311,7 @@ a:hover {
   content: "";
   width: 95%;
   z-index: -1;
-  border-top: 1px solid #183650;
+  border-top: 1px solid #0e1c29;
   margin: 0 auto;
   position: absolute;
   inset: 50% 0 0;
@@ -317,8 +327,8 @@ a:hover {
   height: 40px;
   color: #fff;
   text-align: center;
-  background-color: #183650;
-  border: 1px solid #183650;
+  background-color: #0e1c29;
+  border: 1px solid #0e1c29;
   border-radius: 25px;
   margin: .5rem 0 0;
   padding: .5rem;
@@ -364,15 +374,6 @@ a:hover {
 .intro__desc--italic {
   color: #747171;
   font-style: italic;
-}
-
-.intro__link {
-  color: #af6420;
-  padding: .5rem .7rem;
-}
-
-.intro__link:hover {
-  color: #183650;
 }
 
 .intro__item {
@@ -472,7 +473,7 @@ a:hover {
   color: #bb7021;
   text-align: left;
   text-shadow: 1px 1px #182037;
-  border-bottom: 1px solid #183650;
+  border-bottom: 1px solid #0e1c29;
   margin: 1.1rem 0;
   padding: 0 0 .2rem;
   font-size: 1.7em;
@@ -500,7 +501,7 @@ a:hover {
 .bloc__date {
   text-align: center;
   color: #fff;
-  background-color: #183650;
+  background-color: #0e1c29;
   border-radius: 11px;
   margin: .4rem 0 .2rem;
   padding: .2rem 0;
@@ -539,8 +540,8 @@ a:hover {
     width: 50px;
     -o-transition: all .5s;
     cursor: pointer;
-    background-color: #183650;
-    border: 1px solid #183650;
+    background-color: #0e1c29;
+    border: 1px solid #0e1c29;
     border-radius: 25px;
     margin: 2rem 0 0;
     padding: .5rem;
