@@ -5,7 +5,7 @@
     width: 100%;
     z-index: 10;
     height: 22vh;
-    background-color:var.$text-color-variation;
+    background-color:var.$color-dark-variation;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -33,13 +33,13 @@
     }
     &__title {
         font-weight: bold;
-        color: var.$text-color;
+        color: var.$color-dark;
     }
 
     &__secondTitle {
         font-size: 2.3rem;
         font-weight: lighter;
-        color: var.$text-color;
+        color: var.$color-dark;
         text-shadow: 1px 2px var.$background-color;
 
     }
@@ -63,7 +63,7 @@
         font-size: 1.2rem;
         font-weight: bold;
         display: block;
-        background-color: var.$background-color-dark;
+        background-color: var.$color-dark;
         border-radius: 15px;
         color: var.$background-color;
         padding: .5rem;
@@ -71,7 +71,7 @@
 
         @include mixin.printA4 {
             font-size: 12pt;
-            color: var.$background-color-dark;
+            color: var.$color-dark;
             margin-bottom: 10pt;
         }
 

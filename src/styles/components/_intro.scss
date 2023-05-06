@@ -21,7 +21,7 @@
         z-index: 1;
 
         &:before {
-            border-top: 1px solid var.$background-color-dark;
+            border-top: 1px solid var.$color-dark;
             content:"";
             margin: 0 auto; /* cela centre la ligne */
             position: absolute; /* position absolut doit être appliquée ici, et une position relative sur le parent */
@@ -37,7 +37,7 @@
     }
 
     &__img {
-        border: 1px solid var.$background-color-dark;
+        border: 1px solid var.$color-dark;
         border-radius: 50%;
     }
 
@@ -47,8 +47,8 @@
             line-height:1.1;
             text-align: center;
             margin : 1rem 0;
-            color: var.$text-color-variation;
-            text-shadow :1px 2px var.$background-color-dark;
+            color: var.$color-dark-variation;
+            text-shadow :1px 2px var.$color-dark;
 
             @include mixin.printA4 {
                 font-size: 2em;
@@ -73,7 +73,7 @@
         z-index: 1;
 
         &:before {
-            border-top: 1px solid var.$background-color-dark;
+            border-top: 1px solid var.$color-dark;
             content:"";
             margin: 0 auto; /* cela centre la ligne */
             position: absolute; /* position absolut doit être appliquée ici, et une position relative sur le parent */
@@ -91,8 +91,8 @@
         width: 40px;
         height : 40px;
         margin: 0;
-        background-color:var.$background-color-dark;
-        border : 1px solid var.$background-color-dark;
+        background-color:var.$color-dark;
+        border : 1px solid var.$color-dark;
         border-radius: 25px;
         color: white;
         text-align: center;
@@ -131,16 +131,6 @@
         &--italic {
             font-style: italic;
             color: rgb(116, 113, 113);
-        }
-    }
-
-    &__link {
-        padding: 0.5rem 0.7rem;
-        color : var.$text-color-variation;
-
-
-        &:hover {
-            color : var.$background-color-dark;
         }
     }
 
