@@ -189,6 +189,7 @@
     color : var.$background-color;
     border-radius: 5px;
     min-width: 8rem;
+    margin: 1rem 0;
 
     @include mixin.printA4 {
         font-size: 0.6rem;
